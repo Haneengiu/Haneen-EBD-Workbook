@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f3f6f1;
+  color: #172c25;
+  margin: 0 auto;
+  max-width: 68rem;
+  padding: 2rem 1.5rem;
+  line-height: 1.6;
+}
+header { padding: 1rem 0 2rem; border-bottom: 2px solid #bbcec0; }
+.eyebrow { color: #315840; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; }
+h1 { font-size: clamp(2.3rem, 7vw, 4rem); line-height: 1.1; margin: 0.5rem 0 1rem; }
+h2 { margin-bottom: 0.25rem; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin: 1.5rem 0; }
+#status { margin-top: 0; color: #435b4c; }
+#list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem; }
+.listing {
+  padding: 1.5rem;
+  color: #172c25;
+  background-color: #ffffff;
+  border: 1px solid #c4d4c8;
+  border-radius: 0.8rem;
+  font-weight: 600;
+}
+button { background: #155b3a; color: #ffffff; border: 0; border-radius: 0.5rem; padding: 0.85rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer; }
+button:hover { background: #0e4329; }
+button:focus-visible { outline: 3px solid #865900; outline-offset: 4px; }
+footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #bbcec0; color: #435b4c; font-size: 0.9rem; }
