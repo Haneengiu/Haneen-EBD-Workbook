@@ -1,42 +1,31 @@
-/* 10-css — your work goes in this file.
- *
- * The lesson is example.css:      npm run open 10
- * See your own page with:         npm run open 10 exercise
- * Check your work with:           npm test 10
- *
- * exercise.html is written for you and must not be edited. Every class and
- * element named below already exists in it.
- *
- * Write each rule where its TODO is, then delete the TODO comment. The exact
- * colours, sizes and fonts are yours to choose unless a TODO says otherwise —
- * make it look like something you would not be embarrassed by.
- *
- * Keep the page open in the browser and refresh after each change.
- */
-
-/* TODO: a rule for `body` that sets
- *       font-family, color, and background-color. */
-
-/* TODO: a rule for `.page` that sets
- *       max-width, and margin (use `0 auto` to centre it). */
-
-/* TODO: a rule for `header` that sets
- *       display: flex;
- *       justify-content: space-between;
- *       align-items: center;
- *       and one more property of your choosing. */
-
-/* TODO: a rule for `nav a` — a descendant selector, so it only affects links
- *       inside the nav — that sets
- *       color, and text-decoration. */
-
-/* TODO: a rule for `.card-list` that sets
- *       display: flex;
- *       gap (any size);
- *       flex-wrap: wrap; */
-
-/* TODO: a rule for `.card` that sets
- *       padding, border-radius, and background-color. */
-
-/* TODO: a rule for `.price` that sets
- *       color, and font-weight. */
+body {
+  font-family: system-ui, sans-serif;
+  color: #172c25;
+  background-color: #f2f6f3;
+  line-height: 1.6;
+  margin: 0;
+}
+.page { max-width: 64rem; margin: 0 auto; padding: 1.5rem; }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #0b6e4f;
+  padding-bottom: 1rem;
+}
+h1 { color: #0b5941; }
+nav { display: flex; gap: 1rem; }
+nav a { color: #0b5941; text-decoration: underline; text-underline-offset: 0.2em; }
+.card-list { display: flex; gap: 1rem; flex-wrap: wrap; }
+.card {
+  flex: 1 1 12rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #cadbd2;
+}
+.card h3 { margin-top: 0; }
+.price { color: #0b5941; font-weight: bold; font-size: 1.25rem; }
+footer { border-top: 1px solid #cadbd2; margin-top: 2rem; padding-top: 1rem; }
